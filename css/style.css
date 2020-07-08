@@ -16,13 +16,33 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 
-  /* margin-top: 5em;
-  margin-bottom: 5em;
-  margin-left: 2.5em;
-  margin-right: 2.5em; */
-  
-  padding: 2.5em 5em;
+  padding-top: 2.5em;
+  padding-right: 5em;
+  padding-bottom: 2.5em;
+  padding-left: 5em;
 }
+
+header {
+  /* border: 1px solid violet; */
+}
+
+header .nav-brand {
+  /* border: 1px solid salmon; */
+  display: flex;
+
+  margin-top: 2.25em;
+  margin-bottom: 2.25em;
+}
+
+header .nav-brand img {
+  /* border: 1px solid greenyellow; */
+  width: 13.5em;
+
+  position: relative;
+  left: -10px;
+}
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
