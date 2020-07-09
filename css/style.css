@@ -4,13 +4,13 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
 }
 
 .bucket {
   border: 1px solid red;
-  height: 100vh;
+  /* height: 100vh; */
 
   background-image: url(../images/bg-mobile.svg), linear-gradient(hsla(257, 40%, 49%, 0.4), hsla(257, 40%, 49%, 1));
   background-repeat: no-repeat;
@@ -24,14 +24,13 @@ body {
 
 header {
   /* border: 1px solid violet; */
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
 }
 
 header .nav-brand {
   /* border: 1px solid salmon; */
   display: flex;
-
-  margin-top: 2.25em;
-  margin-bottom: 2.25em;
 }
 
 header .nav-brand img {
@@ -42,6 +41,37 @@ header .nav-brand img {
   left: -10px;
 }
 
+.main .main__img img {
+  width: 100%;
+  padding-top: 6.25em;
+  padding-bottom: 6.25em;
+}
+
+.main .main__text {
+  text-align: center;
+}
+
+.main .main__text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+}
+
+.main .main__text p {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+.main .main__text .call-to-action {
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  height: 3em;
+  width: 9.5em;
+  border: none;
+  border-radius: 2.25em;
+  font-size: 1.5em;
+  margin-top: 1.125em;
+  margin-bottom: 8em;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
