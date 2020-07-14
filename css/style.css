@@ -9,16 +9,14 @@ body {
 }
 
 .bucket {
-  border: 1px solid red;
-  /* height: 100vh; */
-
+  /* border: 1px solid red; */
   background-image: url(../images/bg-mobile.svg), linear-gradient(hsla(257, 40%, 49%, 0.4), hsla(257, 40%, 49%, 1));
   background-repeat: no-repeat;
   background-size: 100%;
 
   padding-top: 2.5em;
   padding-right: 5em;
-  padding-bottom: 2.5em;
+  padding-bottom: 5em;
   padding-left: 5em;
 }
 
@@ -36,7 +34,6 @@ header .nav-brand {
 header .nav-brand img {
   /* border: 1px solid greenyellow; */
   width: 13.5em;
-
   position: relative;
   left: -10px;
 }
@@ -71,6 +68,26 @@ header .nav-brand img {
   font-size: 1.5em;
   margin-top: 1.125em;
   margin-bottom: 8em;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media__icon {
+  border: 1px solid white;
+  width: 3.75em;
+  height: 3.75em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media .social-media__icon:nth-child(2) {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 
