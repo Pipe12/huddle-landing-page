@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 .bucket {
@@ -13,6 +14,12 @@ body {
   background-image: url(../images/bg-mobile.svg), linear-gradient(hsla(257, 40%, 49%, 0.4), hsla(257, 40%, 49%, 1));
   background-repeat: no-repeat;
   background-size: 100%;
+
+  max-width: 1440px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 2.5em;
   padding-right: 5em;
@@ -36,6 +43,11 @@ header .nav-brand img {
   width: 13.5em;
   position: relative;
   left: -10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .main .main__img img {
@@ -90,6 +102,40 @@ header .nav-brand img {
   margin-right: 1.5em;
 }
 
+@media (min-width: 750px) {
+  .bucket {
+    padding-bottom: 2.5em;
+  }
+  .main {
+    flex-direction: row;
+  }
+  .main .main__img {
+    width: 50%;
+  }
+  .main .main__text {
+    width: 50%;
+    text-align: left;
+    padding-left: 3.75em;
+  }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+  .main .main__text h1 {
+    font-size: 2.5em;
+    margin-top: 8rem;
+  }
+  .main .main__text p {
+    font-size: 1.125em;
+  }
+  .main .main__text .call-to-action {
+    font-size: 1.125em;
+  }
+  .social-media {
+    justify-content: flex-end;
+  }
+  .social-media .social-media__icon {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  .social-media .social-media__icon img {
+    width: 60%;
+  }
+}
